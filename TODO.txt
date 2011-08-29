@@ -1,0 +1,15 @@
+# todo.txt
+
+ * Don't choke on doctypes
+ * Iteration yields PyQuery objects, not lxml nodes
+ * Uniformly support selectors (CSS3 + jQuery extensions)
+ * Support the jQuery API more uniformly:
+ * Pass a modified version of the Sizzle and/or jQuery test suite
+ * Remove pyquery.ajax? It's rather outside the core purpose of this library. I'd rather have something focused on fluent DOM parsing than a swissarmy knife.
+
+
+
+## Welp. Also.
+
+https://bitbucket.org/olauzanne/pyquery/issues?status=new&status=open
+

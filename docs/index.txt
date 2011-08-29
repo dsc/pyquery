@@ -1,0 +1,43 @@
+.. include:: ../README.txt
+
+Full documentation
+==================
+
+.. toctree::
+   :maxdepth: 1
+
+   attributes
+   css
+   manipulating
+   traversing
+   api
+   ajax
+   tips
+   testing
+   future
+   changes
+
+More documentation
+==================
+
+First there is the Sphinx documentation `here`_.
+Then for more documentation about the API you can use the `jquery website`_.
+The reference I'm now using for the API is ... the `color cheat sheet`_.
+Then you can always look at the `code`_.
+
+.. _jquery website: http://docs.jquery.com/
+.. _code: http://www.bitbucket.org/olauzanne/pyquery/src/tip/pyquery/pyquery.py
+.. _color cheat sheet: http://colorcharge.com/wp-content/uploads/2007/12/jquery12_colorcharge.png
+.. _here: http://packages.python.org/pyquery/
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+
+
+
