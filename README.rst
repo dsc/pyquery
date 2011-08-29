@@ -1,28 +1,21 @@
-pyquery: a jQuery-like library for Python
+PyQuery: a jQuery-like library for Python
 =========================================
 
-pyquery allows you to make jQuery queries on html and xml documents.
-The API is as much as possible the similar to jQuery. pyquery uses lxml for fast
-xml and html manipulation.
+PyQuery allows you to make `jQuery`_-style CSS-selector queries on XML/HTML documents.
+The API is intended to match `jQuery's API`_ whenever possible, 
+though it has been made more Pythonic where appropriate.
 
-This is not (or at least not yet) a library to produce or interact with
-javascript code. I just liked the jQuery API and I missed it in python so I
-told myself "Hey let's make jQuery in python". This is the result.
+This `project`_ is a fork of the `original`_ PyQuery developed by Olivier Lauzanne in 2008;
+it is maintained by `David Schoonover`_. Feedback and bug reports are 
+both very welcome over on `github`_.
 
-It can be used for many purposes, one idea that I might try in the future is to
-use it for templating with pure http templates that you modify using pyquery.
-I can also be used for web scrapping or for theming applications with
-`Deliverance`_.
+.. _jQuery: http://jquery.com
+.. _jQuery's API: http://api.jquery.com
+.. _project: https://github.com/dsc/pyquery
+.. _original: http://www.bitbucket.org/olauzanne/pyquery
+.. _David Schoonover: mailto:dsc@less.ly
+.. _github: https://github.com/dsc/pyquery/issues
 
-The `project`_ is being actively developped on a mercurial repository on
-Bitbucket. I have the policy of giving push access to anyone who wants it
-and then to review what he does. So if you want to contribute just email me.
-
-Please report bugs on `github <https://github.com/dsc/pyquery/issues`_.
-
-.. _fork: https://github.com/dsc/pyquery
-.. _deliverance: http://www.gawel.org/weblog/en/2008/12/skinning-with-pyquery-and-deliverance
-.. _project: http://www.bitbucket.org/olauzanne/pyquery/
 
 Quickstart
 ==========
@@ -59,4 +52,10 @@ are not standard in css such as :first :last :even :odd :eq :lt :gt :checked
 
     >>> d('p:first')
     [<p#hello.hello>]
+
+Notes
+=====
+
+ * PyQuery uses lxml for fast XML and HTML manipulation.
+ * This is not a library to produce or interact with JavaScript code. If that's what you need, check out 
 
