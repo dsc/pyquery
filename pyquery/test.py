@@ -303,6 +303,12 @@ class TestOpener(unittest.TestCase):
         doc = pq(url='http://example.com', opener=opener)
         assert len(doc('.node')) == 1, doc
 
+class TestHasClass(unittest.TestCase):
+    def test_child_has_class(self):
+        doc = pq("""<div id="test" class="on"><div class="off"></div></div>""")
+        assert doc('#test').hasClass('on')
+        assert not doc('#test').hasClass('off')
+
 class TestCallback(unittest.TestCase):
     html = """
         <ol>
