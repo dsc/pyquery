@@ -650,7 +650,11 @@ class PyQuery(list):
 
         ..
         """
-        return self.is_('.%s' % name)
+        for tag in self:
+            classes = set((tag.get('class') or '').split())
+            if name in classes:
+                return True
+        return False
 
     def addClass(self, value):
         """Add a css class to elements::
